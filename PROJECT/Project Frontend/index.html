@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Energy Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI-Powered Smart Energy Consumption Predictor</h1>
+
+        <div class="form-group">
+            <label for="household_size">Household Size</label>
+            <input type="number" id="household_size" placeholder="e.g. 4">
+        </div>
+
+        <div class="form-group">
+            <label for="temperature">Average Temperature (°C)</label>
+            <input type="number" id="temperature" placeholder="e.g. 32">
+        </div>
+
+        <div class="form-group">
+            <label for="has_ac">Has AC (1 = Yes, 0 = No)</label>
+            <input type="number" id="has_ac" placeholder="0 or 1">
+        </div>
+
+        <div class="form-group">
+            <label for="peak_usage">Peak Hour Usage (kWh)</label>
+            <input type="number" id="peak_usage" placeholder="e.g. 5.2">
+        </div>
+
+        <button onclick="predictEnergy()">Predict Energy Consumption</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
